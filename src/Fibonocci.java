@@ -1,18 +1,23 @@
+import java.util.Scanner;
+
 public class Fibonocci {
     public static void main(String[] args) {
-        int a = 50;
-        long z = 0;
-        long b = 1;
-        if (a == 0) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Fibonacci Reqemi yazin: ");
+        int reqem = scanner.nextInt();
+
+        long old = 0;
+        long now = 1;
+        if (reqem == 0) {
             System.out.println("0");
-        } else if (a == 1) {
+        } else if (reqem == 1) {
             System.out.println("1");
         } else {
-            for (int i = 0; i <= a; i++) {
-                System.out.println("Fibonocci " + i + ":" + z);
-                long d = z;
-                z = b;
-                b = d + b;
+            for (int i = 0; i <= reqem; i++) {
+                System.out.println("Fibonocci " + i + ": " + old);
+                long neww = old;//0  1  1
+                old = now;//1   1    2
+                now = neww + now;//1  2  3
             }
         }
     }

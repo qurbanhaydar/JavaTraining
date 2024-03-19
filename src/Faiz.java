@@ -16,9 +16,9 @@ public class Faiz {
         double faiz = 0.06;
 
 
-        for (int i = 1; i<=10; i++) {
+        for (int i = 1; i<=vaxt; i++) {
             axirincimebleg = (axirincimebleg * faiz) + axirincimebleg;
-            System.out.println("Il sonunda netice: " + (int)axirincimebleg);
+            System.out.println(i + " Il sonunda netice: " + (int)axirincimebleg);
         }
 
 
